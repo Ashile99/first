@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mindspace</title>
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">info</a></li>
+          <li><a href="#">How it work</a></li>
+          <li><a href="#">follow</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="logo"></div>
+      <h1>WELCOME TO OUR WEBSITE</h1>
+      <p>The Galaxies</p>
+      <button class="trailer-btn">Trailer <span>▶</span>
+      <video id="trailer-video" width="640" height="360" controls style="display: none;">
+        <source src="E:\Code\HTML\full web1\Elements\videoplayback.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </button> 
+      <script>
+        const trailerBtn = document.querySelector('.trailer-btn');
+        const trailerVideo = document.getElementById('trailer-video');
+      
+        trailerBtn.addEventListener('click', () => {
+          trailerVideo.style.display = 'block';  
+          trailerVideo.play();                   
+        });
+      
+      </script>
+      
+      <div class="cards">
+        <div class="card"><img src="E:\Code\HTML\full web1\Elements\billy-huynh-W8KTS-mhFUE-unsplash.jpg" alt=""><button class="less">Less</button></div>
+        <div class="card"><img src="E:\Code\HTML\full web1\Elements\juskteez-vu-mwhklqGVzck-unsplash.jpg" alt=""></div>
+        <div class="card"><img src="E:\Code\HTML\full web1\Elements\greg-rakozy-oMpAz-DN-9I-unsplash.jpg" alt=""></div>
+        <div class="card"><img src="E:\Code\HTML\full web1\Elements\shot-by-cerqueira-0o_GEzyargo-unsplash.jpg" alt=""><button class="more">More</button></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
